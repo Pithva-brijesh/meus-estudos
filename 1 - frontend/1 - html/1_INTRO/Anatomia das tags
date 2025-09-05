@@ -1,0 +1,144 @@
+----------------------------------------------------------------
+
+             **Como uma tag é feita:**
+
+<nome-da-tag atributo="valor">conteúdo</nome-da-tag>
+
+- Nome da tag: o tipo de “bloco” (ex.: p, a, img).
+
+- Atributos: configurações extras (ex.: class="btn", href="/home").
+
+- Conteúdo: o que fica dentro (texto, outras tags).
+
+- Fechamento: quase sempre </tag>.
+
+- Tags vazias (void): não têm conteúdo nem fechamento: img, br, hr, meta, link, input, source, track, wbr.
+
+
+----------------------------------------------------------------
+
+                **Extras úteis**
+
+- Atributos booleanos: só a presença já liga (ex.: disabled, checked, required).
+
+- Globais (funcionam em quase tudo): id, class, style, title, lang, dir, hidden, tabindex, data-*, aria-*.
+
+- Comentário: <!-- isso não aparece na página -->.
+
+
+----------------------------------------------------------------
+
+                **O mapa do HTML (o que existe de prático)**
+
+Estrutura do documento
+
+- <!DOCTYPE html> • html • head • body
+
+- Cabeçalho (metadados e assets)
+
+- title, meta, link (CSS e ícones), style, script, base
+
+-Seção/semântica (layout da página)
+
+- header, nav, main, section, article, aside, footer
+
+- h1–h6 (títulos), address
+
+- Texto e inline
+
+- p, span, br, hr, strong, em, b, i, u, small
+
+- mark, sub, sup, abbr, q, blockquote, cite
+
+- code, pre, kbd, samp, time, wbr
+
+- Links e mídia
+
+- a (links), img (usa src e sempre alt)
+
+- figure, figcaption, picture, source
+
+- video, audio, track
+
+- canvas, svg
+
+- Listas e tabelas
+
+- ul, ol, li
+
+- dl, dt, dd
+
+- table, caption, thead, tbody, tfoot, tr, th, td, colgroup, col
+
+- Formulários
+
+- form, label, input, textarea, button, select, option, optgroup
+
+- fieldset, legend, datalist, output, progress, meter
+
+- Componentes/UX
+
+- details, summary, dialog
+
+- template, slot (Web Components)
+
+- Script e importações
+
+- script, noscript, link rel="modulepreload"
+
+
+----------------------------------------------------------------
+
+             **Mini-cheat sheet de atributos que você usa o tempo todo**
+
+- Links: a href target rel
+
+- Imagem: img src alt width height
+
+- Input: type name value placeholder required disabled checked
+
+- Form: action method enctype autocomplete novalidate
+
+- Mídia: controls autoplay loop muted poster
+
+- Acessibilidade: aria-label, role, alt, for (em label)
+
+
+
+// tag é bloco, atributo é ajuste fino, conteúdo é o recheio \\
+
+
+----------------------------------------------------------------
+
+                **ESQUELETO**
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Título</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header><h1>Olá</h1></header>
+    <main>
+      <section>
+        <h2>Seção</h2>
+        <p>Um parágrafo com <a href="/">link</a>.</p>
+        <figure>
+          <img src="foto.jpg" alt="Descrição objetiva">
+          <figcaption>Legenda da foto</figcaption>
+        </figure>
+      </section>
+      <form>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <button>Enviar</button>
+      </form>
+    </main>
+    <footer>© Você mesmo</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
