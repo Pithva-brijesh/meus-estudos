@@ -1,1 +1,172 @@
+============================ Maneiras de adicionar CSS ============================
 
+**Inline** (evite; só para testes/micros): quando os estilos são adicionados por um atributo;
+Ex.: <p style="color:red">Oi</p>
+
+Pró: altera 1 elemento na hora.
+
+Contra: difícil manter, pior especificidade.
+
+
+
+**Internal** (em uma página específica): quando o CSS é adicionado na tag head;
+No <head>:
+
+<style>/* CSS aqui */</style>
+Pró: rápido em páginas isoladas.
+
+Contra: vira bagunça se crescer.
+
+
+
+**External**: quando o CSS é adicionado através de um arquivo externo, e depois importado no HTML;    <<< melhor para organizações dos projetos.
+Crie: style.css
+
+No <head> do HTML:
+
+<link rel="stylesheet" href="style.css"> - Pró: cache, organização. - Contra: +1 requisição.
+
+
+
+**@import** ( usar com cuidado )
+Dentro do CSS principal:
+@import url("tema.css");
+
+Contra: pode atrasar carregamento.
+
+====================================================================================
+
+
+
+============================ Anatomia do CSS =======================================
+
+*Regra básica:*
+seletor { propriedade: valor; propriedade2: valor2; }
+
+Ex.:
+.card {
+background: #fff;
+color: #222;
+}
+
+-------------------------------------------------
+
+*Partes:*
+
+- Seletor: quem recebe o estilo (.card)
+
+- Declarações: pares propriedade: valor;
+
+- Bloco: { … }
+
+- Comentário: /* texto */
+
+-------------------------------------------------
+
+*Seletores comuns:*
+
+- Tag: h1, p, a
+
+- Classe: .botao
+
+- ID: #principal
+
+- Atributo: a[target="_blank"]
+
+- Descendente: .card p
+
+- Filho direto: .menu > li
+
+- Irmão: h2 + p
+
+- Pseudo-classe: a:hover, :focus, :nth-child(2)
+
+- Pseudo-elemento: p::first-line, ::after
+
+Box Model (como o elemento ocupa espaço):
+[margin]
+[border]
+[padding]
+[content]
+Dica: geralmente use box-sizing: border-box; no * para facilitar cálculo.
+
+-------------------------------------------------
+
+*Unidades úteis:*
+
+- Absolutas: px
+
+- Relativas: em (ao pai), rem (à raiz), %
+
+- Viewport: vw, vh (tela)
+
+-------------------------------------------------
+
+*Cores:*
+
+- Nome: red
+
+- Hex: #1e90ff
+
+- RGB/A: rgb(30,144,255) / rgba(30,144,255,.85)
+
+- HSL/A: hsl(210,100%,56%) / hsla(...)
+
+Variáveis (custom properties):
+:root { --primaria: #0ea5e9; }
+.btn { background: var(--primaria); }
+
+-------------------------------------------------
+
+*Shorthands úteis:*
+
+- margin: 10px 20px; /* top/bottom right/left */
+
+- padding: 8px 12px 6px; /* top right/left bottom */
+
+- border: 1px solid #ccc;
+
+- font: 600 16px/1.4 "Inter", sans-serif;
+
+- background: url(bg.jpg) center/cover no-repeat;
+
+Media Query (responsivo):
+@media (max-width: 768px) {
+.grid { grid-template-columns: 1fr; }
+}
+
+-------------------------------------------------
+
+*Flex/Grid turbo:*
+
+.container { display: flex; gap: 12px; align-items: center; justify-content: space-between; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+
+Transições/efeitos rápidos:
+.card { transition: all .2s ease; }
+.card:hover { transform: translateY(-2px); }
+
+-------------------------------------------------
+
+*Acessibilidade/UX:*
+
+- Foque estados: :focus-visible
+
+- Tamanhos legíveis (>= 14–16px)
+
+- Contraste ok (ver WCAG)
+
+-------------------------------------------------
+
+*Reset/Normalize básico:*
+
+- { box-sizing: border-box; }
+html, body { margin:0; padding:0; }
+img { max-width:100%; display:block; }
+button { cursor: pointer; }
+
+====================================================================================
+
+
+
+============================ ESQUELETO CSS PRONTO =======================================
